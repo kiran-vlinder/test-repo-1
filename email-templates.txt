@@ -1,0 +1,674 @@
+/* 1 createdAt:Fri Sep 16 2022 17:53:47 GMT+0530 (India Standard Time)*/
+{
+	"_id" : ObjectId("63246ad330abc2d287f36b61"),
+	"name" : "email_verification_holder",
+	"template" : {
+		"data" : [
+			{
+				"id" : "logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vantr.vantr-marketplace/vantr-logo-blue-font.png",
+				"imageStyle" : {
+					"width" : "80px",
+					"height" : "30px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "header",
+				"type" : "title",
+				"title" : "${title}",
+				"align" : "middle",
+				"filler" : {
+					"title" : "Your OTP"
+				}
+			},
+			{
+				"id" : "nl-1",
+				"type" : "newline"
+			},
+			{
+				"id" : "illustration-logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vlinder-ux-assets/email_vantr_illustrations/forgot_password_1000_400.png",
+				"imageStyle" : {
+					"width" : "98%",
+					"height" : "200px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "nl-2",
+				"type" : "newline"
+			},
+			{
+				"id" : "ruler-1",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "3px"
+			},
+			{
+				"id" : "salutation",
+				"type" : "paragraph",
+				"paragraph" : [ "Hello ${recipientName}," ],
+				"searchWords" : [ "${recipientName}" ],
+				"filler" : {
+					"recipientName" : "there"
+				}
+			},
+			{
+				"id" : "content",
+				"type" : "paragraph",
+				"paragraph" : [ "OTP for email verification is" ],
+				"searchWords" : [ "Forgot Password", "OTP" ],
+				"highlightTextColor" : "#1a46d7"
+			},
+			{
+				"id" : "nl-3",
+				"type" : "newline"
+			},
+			{
+				"id" : "otp",
+				"type" : "statistics",
+				"label" : " ",
+				"value" : "${otp}",
+				"align" : "start",
+				"filler" : {
+					"otp" : "NA"
+				}
+			},
+			{
+				"id" : "nl-4",
+				"type" : "newline"
+			},
+			{
+				"id" : "validitycontent",
+				"type" : "paragraph",
+				"paragraph" : [ "This OTP is valid only for 30 minutes." ],
+				"searchWords" : [ "${timegap}", "${date}" ],
+				"filler" : {
+					"timegap" : "30",
+					"date" : ""
+				}
+			},
+			{
+				"id" : "regards",
+				"type" : "paragraph",
+				"paragraph" : [ "Yours,", "${company} Team" ],
+				"searchWords" : [ "${company}" ],
+				"filler" : {
+					"company" : "Klefki"
+				}
+			},
+			{
+				"id" : "nl-5",
+				"type" : "newline"
+			},
+			{
+				"id" : "nl-6",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "1px"
+			},
+			{
+				"id" : "footer",
+				"type" : "footer",
+				"orgTitle" : "${orgTitle}",
+				"orgTitleSize" : 16,
+				"orgTitleAlign" : "middle",
+				"orgAddress" : "${orgAddress}",
+				"privacyUrl" : "${privacyUrl}",
+				"termsUrl" : "${termsUrl}",
+				"iconType" : "circle",
+				"icons" : [
+					{
+						"url" : "${facebookUrl}"
+					},
+					{
+						"url" : "${twitterUrl}"
+					},
+					{
+						"url" : "${instagramUrl}"
+					},
+					{
+						"url" : "${linkedInUrl}"
+					}
+				],
+				"filler" : {
+					"orgTitle" : "vlinder Inc.",
+					"orgAddress" : "16 Green Ash Street Monroe TWP, New Jersey 08831, US",
+					"privacyUrl" : "https://vantr.io/privacy",
+					"termsUrl" : "https://vantr.io/terms",
+					"facebookUrl" : "https://www.facebook.com/vlinder.labs.56",
+					"twitterUrl" : "https://twitter.com/govlinder?lang=en",
+					"instagramUrl" : "https://www.instagram.com/vlinder.io/?hl=en",
+					"linkedInUrl" : "https://www.linkedin.com/company/vlinder-io?originalSubdomain=in"
+				}
+			},
+			{
+				"id" : "disclaimer",
+				"type" : "paragraph",
+				"paragraph" : [ "This is an automated email and doesn't accept any replies. Please get in touch with us on ${contact} for any queries" ],
+				"searchWords" : [ "${contact}" ],
+				"highlightTextColor" : "#1a46d7",
+				"fontSize" : 8,
+				"filler" : {
+					"contact" : "customercare@vlinder.io"
+				}
+			}
+		]
+	},
+	"subject" : "Verify Your Email!!!",
+	"from" : "info@vlinder.io"
+},
+
+/* 2 createdAt:Thu Sep 08 2022 09:18:47 GMT+0530 (India Standard Time)*/
+{
+	"_id" : ObjectId("6319661fd618ba37b7e7b5af"),
+	"name" : "password_reset_OTP",
+	"template" : {
+		"data" : [
+			{
+				"id" : "logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vantr.vantr-marketplace/vantr-logo-blue-font.png",
+				"imageStyle" : {
+					"width" : "80px",
+					"height" : "30px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "header",
+				"type" : "title",
+				"title" : "${title}",
+				"align" : "middle",
+				"filler" : {
+					"title" : "Your OTP"
+				}
+			},
+			{
+				"id" : "nl-1",
+				"type" : "newline"
+			},
+			{
+				"id" : "illustration-logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vlinder-ux-assets/email_vantr_illustrations/forgot_password_1000_400.png",
+				"imageStyle" : {
+					"width" : "98%",
+					"height" : "200px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "nl-2",
+				"type" : "newline"
+			},
+			{
+				"id" : "ruler-1",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "3px"
+			},
+			{
+				"id" : "salutation",
+				"type" : "paragraph",
+				"paragraph" : [ "Hello ${recipientName}," ],
+				"searchWords" : [ "${recipientName}" ],
+				"filler" : {
+					"recipientName" : "there"
+				}
+			},
+			{
+				"id" : "content",
+				"type" : "paragraph",
+				"paragraph" : [ "OTP to reset password is" ],
+				"searchWords" : [ "Forgot Password", "OTP" ],
+				"highlightTextColor" : "#1a46d7"
+			},
+			{
+				"id" : "nl-3",
+				"type" : "newline"
+			},
+			{
+				"id" : "otp",
+				"type" : "statistics",
+				"label" : " ",
+				"value" : "${otp}",
+				"align" : "start",
+				"filler" : {
+					"otp" : "NA"
+				}
+			},
+			{
+				"id" : "nl-4",
+				"type" : "newline"
+			},
+			{
+				"id" : "validitycontent",
+				"type" : "paragraph",
+				"paragraph" : [ "This OTP is valid only for 30 minutes." ],
+				"searchWords" : [ "${timegap}", "${date}" ],
+				"filler" : {
+					"timegap" : "30",
+					"date" : ""
+				}
+			},
+			{
+				"id" : "regards",
+				"type" : "paragraph",
+				"paragraph" : [ "Yours,", "${company} Team" ],
+				"searchWords" : [ "${company}" ],
+				"filler" : {
+					"company" : "Klefki"
+				}
+			},
+			{
+				"id" : "nl-5",
+				"type" : "newline"
+			},
+			{
+				"id" : "nl-6",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "1px"
+			},
+			{
+				"id" : "footer",
+				"type" : "footer",
+				"orgTitle" : "${orgTitle}",
+				"orgTitleSize" : 16,
+				"orgTitleAlign" : "middle",
+				"orgAddress" : "${orgAddress}",
+				"privacyUrl" : "${privacyUrl}",
+				"termsUrl" : "${termsUrl}",
+				"iconType" : "circle",
+				"icons" : [
+					{
+						"url" : "${facebookUrl}"
+					},
+					{
+						"url" : "${twitterUrl}"
+					},
+					{
+						"url" : "${instagramUrl}"
+					},
+					{
+						"url" : "${linkedInUrl}"
+					}
+				],
+				"filler" : {
+					"orgTitle" : "vlinder Inc.",
+					"orgAddress" : "16 Green Ash Street Monroe TWP, New Jersey 08831, US",
+					"privacyUrl" : "https://vantr.io/privacy",
+					"termsUrl" : "https://vantr.io/terms",
+					"facebookUrl" : "https://www.facebook.com/vlinder.labs.56",
+					"twitterUrl" : "https://twitter.com/govlinder?lang=en",
+					"instagramUrl" : "https://www.instagram.com/vlinder.io/?hl=en",
+					"linkedInUrl" : "https://www.linkedin.com/company/vlinder-io?originalSubdomain=in"
+				}
+			},
+			{
+				"id" : "disclaimer",
+				"type" : "paragraph",
+				"paragraph" : [ "This is an automated email and doesn't accept any replies. Please get in touch with us on ${contact} for any queries" ],
+				"searchWords" : [ "${contact}" ],
+				"highlightTextColor" : "#1a46d7",
+				"fontSize" : 8,
+				"filler" : {
+					"contact" : "customercare@vlinder.io"
+				}
+			}
+		]
+	},
+	"subject" : "Verify Your Email!!!",
+	"from" : "info@vlinder.io"
+},
+
+/* 3 createdAt:Mon Aug 01 2022 17:26:44 GMT+0530 (India Standard Time)*/
+{
+	"_id" : ObjectId("62e7bf7c7dd6991f9386fba6"),
+	"name" : "email_verification_OTP",
+	"template" : {
+		"data" : [
+			{
+				"id" : "logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vantr.vantr-marketplace/vantr-logo-blue-font.png",
+				"imageStyle" : {
+					"width" : "80px",
+					"height" : "30px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "header",
+				"type" : "title",
+				"title" : "${title}",
+				"align" : "middle",
+				"filler" : {
+					"title" : "Your OTP"
+				}
+			},
+			{
+				"id" : "nl-1",
+				"type" : "newline"
+			},
+			{
+				"id" : "illustration-logo",
+				"type" : "avatar",
+				"src" : "https://s3.ca-central-1.amazonaws.com/io.vlinder-ux-assets/email_vantr_illustrations/forgot_password_1000_400.png",
+				"imageStyle" : {
+					"width" : "98%",
+					"height" : "200px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "nl-2",
+				"type" : "newline"
+			},
+			{
+				"id" : "ruler-1",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "3px"
+			},
+			{
+				"id" : "salutation",
+				"type" : "paragraph",
+				"paragraph" : [ "Hello ${recipientName}," ],
+				"searchWords" : [ "${recipientName}" ],
+				"filler" : {
+					"recipientName" : "there"
+				}
+			},
+			{
+				"id" : "content",
+				"type" : "paragraph",
+				"paragraph" : [ "OTP for email verification is" ],
+				"searchWords" : [ "Forgot Password", "OTP" ],
+				"highlightTextColor" : "#1a46d7"
+			},
+			{
+				"id" : "nl-3",
+				"type" : "newline"
+			},
+			{
+				"id" : "otp",
+				"type" : "statistics",
+				"label" : " ",
+				"value" : "${otp}",
+				"align" : "start",
+				"filler" : {
+					"otp" : "NA"
+				}
+			},
+			{
+				"id" : "nl-4",
+				"type" : "newline"
+			},
+			{
+				"id" : "validitycontent",
+				"type" : "paragraph",
+				"paragraph" : [ "This OTP is valid only for 30 minutes." ],
+				"searchWords" : [ "${timegap}", "${date}" ],
+				"filler" : {
+					"timegap" : "30",
+					"date" : ""
+				}
+			},
+			{
+				"id" : "regards",
+				"type" : "paragraph",
+				"paragraph" : [ "Yours,", "${company} Team" ],
+				"searchWords" : [ "${company}" ],
+				"filler" : {
+					"company" : "Klefki"
+				}
+			},
+			{
+				"id" : "nl-5",
+				"type" : "newline"
+			},
+			{
+				"id" : "nl-6",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "1px"
+			},
+			{
+				"id" : "footer",
+				"type" : "footer",
+				"orgTitle" : "${orgTitle}",
+				"orgTitleSize" : 16,
+				"orgTitleAlign" : "middle",
+				"orgAddress" : "${orgAddress}",
+				"privacyUrl" : "${privacyUrl}",
+				"termsUrl" : "${termsUrl}",
+				"iconType" : "circle",
+				"icons" : [
+					{
+						"url" : "${facebookUrl}"
+					},
+					{
+						"url" : "${twitterUrl}"
+					},
+					{
+						"url" : "${instagramUrl}"
+					},
+					{
+						"url" : "${linkedInUrl}"
+					}
+				],
+				"filler" : {
+					"orgTitle" : "vlinder Inc.",
+					"orgAddress" : "16 Green Ash Street Monroe TWP, New Jersey 08831, US",
+					"privacyUrl" : "https://vantr.io/privacy",
+					"termsUrl" : "https://vantr.io/terms",
+					"facebookUrl" : "https://www.facebook.com/vlinder.labs.56",
+					"twitterUrl" : "https://twitter.com/govlinder?lang=en",
+					"instagramUrl" : "https://www.instagram.com/vlinder.io/?hl=en",
+					"linkedInUrl" : "https://www.linkedin.com/company/vlinder-io?originalSubdomain=in"
+				}
+			},
+			{
+				"id" : "disclaimer",
+				"type" : "paragraph",
+				"paragraph" : [ "This is an automated email and doesn't accept any replies. Please get in touch with us on ${contact} for any queries" ],
+				"searchWords" : [ "${contact}" ],
+				"highlightTextColor" : "#1a46d7",
+				"fontSize" : 8,
+				"filler" : {
+					"contact" : "customercare@vlinder.io"
+				}
+			}
+		]
+	},
+	"subject" : "Verify Your Email!!!",
+	"from" : "info@vlinder.io"
+},
+
+/* 4 createdAt:Mon Jan 31 2022 12:54:21 GMT+0530 (India Standard Time)*/
+{
+	"_id" : ObjectId("61f78ea54e38838edc5734d7"),
+	"name" : "invitation_admin",
+	"template" : {
+		"data" : [
+			{
+				"id" : "logo",
+				"type" : "avatar",
+				"src" : "https://i.ibb.co/cJBKxdc/vantr-logo-blue-font.png",
+				"imageStyle" : {
+					"width" : "80px",
+					"height" : "30px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "header",
+				"type" : "title",
+				"title" : "Welcome Aboard",
+				"align" : "middle"
+			},
+			{
+				"id" : "description",
+				"type" : "title",
+				"title" : "create and monetize your digital collectibles",
+				"align" : "middle",
+				"size" : 13
+			},
+			{
+				"id" : "nl-1",
+				"type" : "newline"
+			},
+			{
+				"id" : "logo",
+				"type" : "avatar",
+				"src" : "https://i.ibb.co/Cv6wFmy/celeb-colorful.jpg",
+				"imageStyle" : {
+					"width" : "98%",
+					"height" : "200px",
+					"objectFit" : "contain"
+				},
+				"align" : "middle"
+			},
+			{
+				"id" : "nl-xyz",
+				"type" : "newline"
+			},
+			{
+				"id" : "ruler-1",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "3px"
+			},
+			{
+				"id" : "salutation",
+				"type" : "paragraph",
+				"paragraph" : [ "Hello ${recipientName}," ],
+				"searchWords" : [ "${recipientName}" ],
+				"filler" : {
+					"recipientName" : "There"
+				}
+			},
+			{
+				"id" : "content",
+				"type" : "paragraph",
+				"paragraph" : [ "Curate and Monetize Journey of Achievements as Digital Collectibles including Individual World Records, Team/Franchise Wins.", "Engage and Incentivize fans using Digital Collectibles as Tokens and engage by Gamification." ],
+				"searchWords" : [ "Digital Collectibles", "Engage", "Incentivize" ],
+				"highlightTextColor" : "#1a46d7"
+			},
+			{
+				"id" : "nl-2asada",
+				"type" : "newline"
+			},
+			{
+				"id" : "nl-aui8",
+				"type" : "newline"
+			},
+			{
+				"id" : "singup-title",
+				"type" : "title",
+				"title" : "Are you interested ?",
+				"align" : "start",
+				"size" : 15
+			},
+			{
+				"id" : "sign-up",
+				"type" : "anchor-button",
+				"label" : "Sign Up",
+				"link" : "${verificationLink}",
+				"align" : "start",
+				"style" : {
+					"backgroundColor" : "#1a46d7"
+				},
+				"filler" : {
+					"verificationLink" : ""
+				}
+			},
+			{
+				"id" : "nl-2",
+				"type" : "newline"
+			},
+			{
+				"id" : "regards",
+				"type" : "paragraph",
+				"paragraph" : [ "Regards", "${name}" ],
+				"searchWords" : [ "${name}" ],
+				"filler" : {
+					"name" : "Klefki"
+				}
+			},
+			{
+				"id" : "nl-3",
+				"type" : "newline"
+			},
+			{
+				"id" : "nl-5",
+				"type" : "ruler",
+				"color" : "#efefef",
+				"height" : "1px"
+			},
+			{
+				"id" : "footer",
+				"type" : "footer",
+				"orgTitle" : "${orgTitle}",
+				"orgTitleSize" : 16,
+				"orgTitleAlign" : "middle",
+				"orgAddress" : "${orgAddress}",
+				"privacyUrl" : "${privacyUrl}",
+				"termsUrl" : "${termsUrl}",
+				"iconType" : "circle",
+				"icons" : [
+					{
+						"url" : "${facebookUrl}"
+					},
+					{
+						"url" : "${twitterUrl}"
+					},
+					{
+						"url" : "${instagramUrl}"
+					},
+					{
+						"url" : "${linkedInUrl}"
+					}
+				],
+				"filler" : {
+					"orgTitle" : "vlinder Inc.",
+					"orgAddress" : "16 Green Ash Street Monroe TWP, New Jersey 08831, US",
+					"privacyUrl" : "https://vantr.io/privacy",
+					"termsUrl" : "https://vantr.io/terms",
+					"facebookUrl" : "https://www.facebook.com/vlinder.labs.56",
+					"twitterUrl" : "https://twitter.com/govlinder",
+					"instagramUrl" : "https://www.instagram.com/vlinder.io/",
+					"linkedInUrl" : "https://in.linkedin.com/company/vlinder-io"
+				}
+			},
+			{
+				"id" : "disclaimer",
+				"type" : "paragraph",
+				"paragraph" : [ "This is an automated email and doesn't accept any replies. Please get in touch with us on ${contact} for any queries" ],
+				"searchWords" : [ "${contact}" ],
+				"highlightTextColor" : "#1a46d7",
+				"fontSize" : 8,
+				"filler" : {
+					"contact" : "customercare@vlinder.io"
+				}
+			}
+		],
+		"styleGuide" : {
+			"backgroundColor" : "#fff"
+		}
+	},
+	"subject" : "You are invited to join Klefki.",
+	"from" : "info@vlinder.io"
+}
